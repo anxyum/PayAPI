@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  padding: 20px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: none;
+}
+
+.cta {
+  padding: 16px 24px;
+  background-color: #ba4270;
+  border-radius: 24px;
+  color: #fbfcfe;
+  text-decoration: none;
+
+  /* copied from figma */
+  font-family: Public Sans;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17.63px;
+  letter-spacing: -0.11538461595773697px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  display: none;
+}
+
+.cta:hover {
+  background-color: #da6d97;
+}
+
+@media (min-width: 768px) {
+  header {
+    width: 90%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .link {
+    color: #36536b;
+    opacity: 70%;
+    text-decoration: none;
+
+    /* copied from figma */
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17.63px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .link:hover {
+    opacity: 100%;
+  }
+
+  .cta {
+    display: block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    justify-content: none;
+  }
+
+  nav {
+    margin-left: 64px;
+    margin-right: auto;
+  }
+}
