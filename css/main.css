@@ -288,3 +288,7 @@ header .cta {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
+
+.partner-logo {
+  color: white;
+}
