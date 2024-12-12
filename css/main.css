@@ -27,6 +27,41 @@ body {
   cursor: pointer;
 }
 
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+.form-cta {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-cta * {
+  width: 100%;
+}
+
+.input-email {
+  background-color: #fbfcfe;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 24px;
+  box-shadow: 10px 10px 25px -10px #9ca9b4;
+
+  /* copied from figma */
+  font-family: Public Sans;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17.63px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 header {
   margin: 20px;
   margin-top: 40px;
@@ -66,13 +101,6 @@ header {
     margin-right: auto;
   }
 
-  .form-wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 90%;
-  }
-
   .title {
     color: #36536b;
     max-width: 90%;
@@ -84,34 +112,6 @@ header {
     line-height: 36px;
     letter-spacing: -0.2461538463830948px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-
-  .form-cta {
-    margin-bottom: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .form-cta * {
-    width: 100%;
-  }
-
-  .input-email {
-    background-color: #fbfcfe;
-    border: none;
-    padding: 16px 24px;
-    border-radius: 24px;
-    box-shadow: 10px 10px 25px -10px #9ca9b4;
-
-    /* copied from figma */
-    font-family: Public Sans;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 17.63px;
-    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
@@ -145,6 +145,7 @@ header {
 .partners-wrapper {
   background-color: #1b262f;
   padding: 80px 0px;
+  margin-bottom: 80px;
 
   .partners {
     width: 90%;
@@ -234,7 +235,210 @@ header {
   }
 }
 
+.features {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 80px;
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .title {
+    color: #36536b;
+
+    /* copied from figma */
+    font-family: DM Serif Display;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.2769230902194977px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .description {
+    color: #6c8294;
+
+    /* copied from figma */
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+
+.benefits {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 80px;
+
+  .benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .title {
+    color: #36536b;
+
+    /* copied from figma */
+    font-family: Public Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.13846154510974884px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .description {
+    color: #6c8294;
+
+    /* copied from figma */
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.11538461595773697px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+
+.ready-to-start {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 80px;
+
+  .title {
+    color: #36536b;
+
+    /* copied from figma */
+    font-family: DM Serif Display;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.2461538463830948px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+
+footer {
+  background-color: #1b262f;
+  padding: 40px;
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .link {
+    color: #fbfcfe;
+    opacity: 70%;
+    text-decoration: none;
+
+    /* copied from figma */
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17.63px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .link:hover {
+    opacity: 100%;
+  }
+
+  ul {
+    padding: 0;
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 768px) {
+  .form-cta {
+    background-color: #fbfcfe;
+    box-shadow: 10px 10px 25px -10px #9ca9b4;
+    border-radius: 24px;
+    flex-direction: row;
+    width: auto;
+    min-width: 60%;
+
+    * {
+      width: auto;
+    }
+
+    .cta {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+
+  .input-email {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
   header {
     width: 90%;
     max-width: 1100px;
@@ -298,32 +502,11 @@ header {
       text-underline-position: from-font;
       text-decoration-skip-ink: none;
     }
-
-    .form-cta {
-      background-color: #fbfcfe;
-      box-shadow: 10px 10px 25px -10px #9ca9b4;
-      border-radius: 24px;
-      flex-direction: row;
-      width: auto;
-      min-width: 60%;
-
-      * {
-        width: auto;
-      }
-
-      .cta {
-        margin-right: 0;
-        margin-left: auto;
-      }
-    }
-
-    .input-email {
-      background-color: transparent;
-      box-shadow: none;
-    }
   }
 
   .partners-wrapper {
+    margin-bottom: 100px;
+
     .partners-logos {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -336,6 +519,54 @@ header {
       font-size: 48px;
       line-height: 56px;
       letter-spacing: -0.3692307770252228px;
+    }
+  }
+
+  .features {
+    gap: 100px;
+
+    .feature {
+      max-width: 70%;
+    }
+
+    .img {
+      width: 400px;
+    }
+
+    .title {
+      color: #36536b;
+
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -0.3692307770252228px;
+    }
+  }
+
+  .benefits {
+    flex-direction: row;
+  }
+
+  .ready-to-start {
+    gap: 40px;
+
+    .title {
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -0.3692307770252228px;
+    }
+  }
+
+  footer {
+    .footer-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      flex-direction: row;
+      align-items: space-between;
+      gap: 40px;
     }
   }
 }
@@ -358,6 +589,15 @@ header {
     max-width: 1100px;
     flex-direction: row-reverse;
 
+    .form-wrapper {
+      width: 50%;
+      align-items: flex-start;
+    }
+
+    .form-email {
+      margin-left: 0;
+    }
+
     .img-container {
       height: 500px;
       width: 50%;
@@ -367,17 +607,8 @@ header {
       border-radius: 32px;
     }
 
-    .form-wrapper {
-      width: 50%;
-      align-items: flex-start;
-    }
-
     .title {
       text-align: left;
-    }
-
-    .form-email {
-      margin-left: 0;
     }
 
     .contact-us {
@@ -408,6 +639,67 @@ header {
     .description {
       text-align: left;
       margin-bottom: 32px;
+    }
+  }
+
+  .features {
+    gap: 150px;
+    margin-bottom: 150px;
+
+    .feature {
+      width: 100%;
+      max-width: none;
+      justify-content: space-between;
+    }
+
+    .first {
+      flex-direction: row;
+    }
+
+    .second {
+      flex-direction: row-reverse;
+    }
+
+    .img {
+      width: 500px;
+      max-width: none;
+    }
+
+    .text-wrapper {
+      max-width: 445px;
+      align-items: flex-start;
+    }
+
+    .title {
+      text-align: left;
+    }
+
+    .description {
+      text-align: left;
+    }
+  }
+
+  .ready-to-start {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .title {
+      text-align: left;
+    }
+
+    * {
+      width: 445px;
+    }
+  }
+
+  footer {
+    .footer-wrapper {
+      gap: 0;
+    }
+
+    nav {
+      margin-left: 64px;
+      margin-right: auto;
     }
   }
 }
