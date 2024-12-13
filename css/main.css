@@ -2,6 +2,24 @@ body {
   background-color: #edf3f8;
 }
 
+.link {
+  color: #36536bb0;
+  text-decoration: none;
+
+  /* copied from figma */
+  font-family: Public Sans;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17.63px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.link:hover {
+  color: #36536b;
+}
+
 .cta {
   padding: 16px 24px;
   background-color: #ba4270;
@@ -127,18 +145,6 @@ header {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-  }
-
-  .contact-us-link {
-    color: #6c8294;
-    text-decoration: none;
-
-    /* copied from figma */
-    font-family: Public Sans;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 17.63px;
-    text-align: left;
   }
 }
 
@@ -450,25 +456,6 @@ footer {
       display: flex;
       justify-content: space-between;
       gap: 40px;
-    }
-
-    .link {
-      color: #36536b;
-      opacity: 70%;
-      text-decoration: none;
-
-      /* copied from figma */
-      font-family: Public Sans;
-      font-size: 15px;
-      font-weight: 700;
-      line-height: 17.63px;
-      text-align: left;
-      text-underline-position: from-font;
-      text-decoration-skip-ink: none;
-    }
-
-    .link:hover {
-      opacity: 100%;
     }
 
     .cta {
