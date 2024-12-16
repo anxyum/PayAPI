@@ -28,6 +28,7 @@ body {
   text-decoration: none;
   border: none;
   text-align: center;
+  box-shadow: 10px 10px 25px -10px #36536b40;
 
   /* copied from figma */
   font-family: Public Sans;
@@ -53,7 +54,6 @@ body {
 }
 
 .form-cta {
-  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -132,6 +132,10 @@ header {
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+  }
+
+  .form-cta {
+    margin-bottom: 24px;
   }
 
   .contact-us {
@@ -378,7 +382,8 @@ header {
 
 footer {
   background-color: #1b262f;
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   .footer-wrapper {
     width: 90%;
