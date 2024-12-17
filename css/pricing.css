@@ -5,12 +5,6 @@
   margin-bottom: 80px;
 }
 
-.border {
-  width: 100%;
-  height: 1px;
-  background-color: #36536b40;
-}
-
 .main-title {
   color: #36536b;
   margin-bottom: 48px;
@@ -87,6 +81,17 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+
+.functionalities-wrapper {
+  width: 100%;
+  padding: 24px 0px;
+
+  border-top: #36536b40 1px solid;
+  border-bottom: #36536b40 1px solid;
+
+  display: flex;
+  justify-content: center;
 }
 
 .functionalities {
@@ -180,6 +185,10 @@
 
   .price {
     text-align: left;
+  }
+
+  .functionalities-wrapper {
+    justify-content: flex-start;
   }
 
   .functionalities {

@@ -1,0 +1,66 @@
+.actual-form {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hiden-label {
+  display: none;
+}
+
+.element {
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  border: none;
+  padding: 16px 20px;
+  border-bottom: #36536b80 1px solid;
+  background-color: transparent;
+  color: #36536b;
+
+  /* copied from figma */
+  font-family: Public Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.11538461595773697px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.form-input::placeholder {
+  color: #36536b80;
+}
+
+textarea.form-input {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 112px;
+  resize: vertical;
+}
+
+.label {
+  color: #36536b;
+
+  /* copied from figma */
+  font-family: Public Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.11538461595773697px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.form-checkbox {
+  width: 24px;
+  height: 24px;
+  background-color: #36536b40;
+  border: none;
+}

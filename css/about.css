@@ -1,34 +1,8 @@
-.mission {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
+.section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  margin-bottom: 72px;
-
-  .franchement-je-sais-pas-quoi-mettre-comme-nom {
-    color: #36536b;
-    margin: 0;
-
-    /* copied from figma */
-    font-family: DM Serif Display;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: -0.2461538463830948px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-
-  .section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
+  gap: 16px;
 
   .title {
     color: #36536b;
@@ -58,21 +32,157 @@
   }
 }
 
+.mission {
+  width: 90%;
+  max-width: 920px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 72px;
+
+  .main-claim {
+    color: #36536b;
+    margin: 0;
+
+    /* copied from figma */
+    font-family: DM Serif Display;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.2461538463830948px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+
+.team {
+  width: 100%;
+  margin-bottom: 48px;
+
+  .team-image {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  .team-wrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .statistics {
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+
+    border-top: #36536b40 1px solid;
+    border-bottom: #36536b40 1px solid;
+  }
+
+  .statistic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .statistic-name {
+    color: #36536bb0;
+
+    /* copied from figma */
+    font-family: Public Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .statistic-number {
+    color: #ba4270;
+
+    /* copied from figma */
+    font-family: DM Serif Display;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.4307692348957062px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+
 @media (min-width: 768px) {
+  .section {
+    flex-direction: row;
+    gap: 0;
+    align-items: flex-start;
+
+    .title {
+      width: 33%;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.2461538463830948px;
+      text-align: left;
+    }
+
+    .description {
+      width: 67%;
+      text-align: left;
+    }
+  }
+
   .mission {
     gap: 64px;
 
-    .franchement-je-sais-pas-quoi-mettre-comme-nom {
+    .main-claim {
       font-size: 48px;
       line-height: 56px;
       letter-spacing: -0.3692307770252228px;
     }
+  }
 
-    .section {
-      flex-direction: row;
-      gap: 0;
-      align-items: flex-start;
+  .team {
+    .team-wrapper {
+      gap: 64px;
     }
+
+    .statistics {
+      flex-direction: row;
+      gap: 10px;
+      border: none;
+      padding: 0;
+    }
+
+    .statistic {
+      width: 100%;
+      align-items: flex-start;
+
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-top: #36536b40 1px solid;
+      border-bottom: #36536b40 1px solid;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    flex-direction: row;
+    gap: 0;
+    align-items: flex-start;
 
     .title {
       width: 30%;
@@ -87,37 +197,22 @@
       text-align: left;
     }
   }
-}
 
-@media (min-width: 1024px) {
   .mission {
     gap: 64px;
 
-    .franchement-je-sais-pas-quoi-mettre-comme-nom {
+    .main-claim {
       font-size: 56px;
       line-height: 56px;
       letter-spacing: -0.4307692348957062px;
       text-align: left;
-      
     }
+  }
 
+  .team {
     .section {
-      flex-direction: row;
-      gap: 0;
-      align-items: flex-start;
-    }
-
-    .title {
-      width: 30%;
-      font-size: 32px;
-      line-height: 40px;
-      letter-spacing: -0.2461538463830948px;
-      text-align: left;
-    }
-
-    .description {
-      width: 70%;
-      text-align: left;
+      max-width: 920px;
+      margin: auto;
     }
   }
 }
