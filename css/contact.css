@@ -1,66 +1,206 @@
-.actual-form {
+.form-section {
   width: 90%;
+  max-width: 1100px;
   margin: auto;
+
+  .h1-page-contact {
+    color: #36536b;
+    margin-bottom: 40px;
+
+    /* copied from figma */
+    font-family: DM Serif Display;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.2461538463830948px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .actual-form {
+    max-width: 445px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 80px;
+  }
+
+  .hiden-label {
+    display: none;
+  }
+
+  .element {
+    width: 100%;
+  }
+
+  .form-input {
+    width: 100%;
+    border: none;
+    padding: 16px 20px;
+    border-bottom: #36536b80 1px solid;
+    background-color: transparent;
+    color: #36536b;
+
+    /* copied from figma */
+    font-family: Public Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.11538461595773697px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .form-input::placeholder {
+    color: #36536b80;
+  }
+
+  textarea.form-input {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 112px;
+    resize: vertical;
+  }
+
+  .label {
+    color: #36536b;
+
+    /* copied from figma */
+    font-family: Public Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.11538461595773697px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .form-checkbox {
+    appearance: none;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    background-color: #36536b40;
+    border: none;
+  }
+
+  .form-checkbox:checked {
+    background-color: #ba4270;
+    background-image: url(../assets/contact/checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+  }
+
+  .form-checkbox:hover {
+    cursor: pointer;
+    background-color: #36536b30;
+  }
+
+  .form-checkbox:hover:checked {
+    background-color: #ba4270e0;
+  }
+
+  .checkbox-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .button {
+    border: 1px solid #36536b;
+    border-radius: 24px;
+    padding: 16px 48px;
+    text-decoration: none;
+    background-color: transparent;
+    color: #36536b;
+
+    /* copied from figma */
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17.63px;
+    letter-spacing: -0.11538461595773697px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .button:hover {
+    background-color: #36536b;
+    color: #fbfcfe;
+  }
+}
+
+.sections-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 80px;
 }
 
-.hiden-label {
-  display: none;
+.innovators {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  .statement {
+    color: #36536bc0;
+    max-width: 445px;
+    margin: 0 auto;
+
+    /* copied from figma */
+    font-family: DM Serif Display;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.1846153885126114px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .partners-logos {
+    margin-bottom: 0;
+  }
 }
 
-.element {
-  width: 100%;
+@media (min-width: 768px) {
+  .form-section {
+    .h1-page-contact {
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -0.3692307770252228px;
+      margin-top: 76px;
+      margin-bottom: 56px;
+    }
+  }
 }
 
-.form-input {
-  width: 100%;
-  border: none;
-  padding: 16px 20px;
-  border-bottom: #36536b80 1px solid;
-  background-color: transparent;
-  color: #36536b;
+@media (min-width: 1024px) {
+  .form-section {
+    .h1-page-contact {
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.4307692348957062px;
+      text-align: left;
+      margin-top: 80px;
+      margin-bottom: 40px;
+    }
+  }
 
-  /* copied from figma */
-  font-family: Public Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: -0.11538461595773697px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-
-.form-input::placeholder {
-  color: #36536b80;
-}
-
-textarea.form-input {
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 112px;
-  resize: vertical;
-}
-
-.label {
-  color: #36536b;
-
-  /* copied from figma */
-  font-family: Public Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: -0.11538461595773697px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-
-.form-checkbox {
-  width: 24px;
-  height: 24px;
-  background-color: #36536b40;
-  border: none;
+  .sections-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
 }
