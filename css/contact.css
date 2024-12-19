@@ -55,6 +55,10 @@
     text-decoration-skip-ink: none;
   }
 
+  .form-input:focus {
+    outline: none;
+  }
+
   .form-input::placeholder {
     color: #36536b80;
   }
