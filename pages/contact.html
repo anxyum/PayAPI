@@ -115,7 +115,7 @@
       </h1>
 
       <div class="sections-wrapper">
-        <form class="actual-form" action="">
+        <form class="actual-form">
           <div class="element">
             <label class="hiden-label" for="name">Name</label>
             <input
@@ -125,6 +125,7 @@
               id="name"
               placeholder="Name"
             />
+            <p class="error-message hidden">This field can’t be empty</p>
           </div>
 
           <div class="element">
@@ -136,6 +137,7 @@
               id="email"
               placeholder="Email Address"
             />
+            <p class="error-message hidden">This field can’t be empty</p>
           </div>
 
           <div class="element">
@@ -158,6 +160,7 @@
               id="title"
               placeholder="Title"
             />
+            <p class="error-message hidden">This field can’t be empty</p>
           </div>
 
           <div class="element">
@@ -168,6 +171,7 @@
               id="message"
               placeholder="Message"
             ></textarea>
+            <p class="error-message hidden">This field can’t be empty</p>
           </div>
 
           <div class="element checkbox-wrapper">
@@ -181,6 +185,7 @@
               Stay up-to-date with company announcements and updates to our API
             </label>
           </div>
+
           <div class="button-wrapper">
             <button class="button" type="submit">Submit</button>
           </div>
@@ -384,5 +389,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="../js/app.js"></script>
   </body>
 </html>

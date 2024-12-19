@@ -24,6 +24,7 @@
     flex-direction: column;
     gap: 24px;
     margin-bottom: 80px;
+    margin: auto;
   }
 
   .hiden-label {
@@ -38,9 +39,10 @@
     width: 100%;
     border: none;
     padding: 16px 20px;
-    border-bottom: #36536b80 1px solid;
+    border-bottom: 1px solid;
+    border-color: #36536b80;
     background-color: transparent;
-    color: #36536b;
+    color: #36536be0;
 
     /* copied from figma */
     font-family: Public Sans;
@@ -55,6 +57,16 @@
 
   .form-input::placeholder {
     color: #36536b80;
+  }
+
+  .form-input:hover {
+    color: #36536b;
+    border-color: #36536b;
+  }
+
+  .form-input:hover::placeholder {
+    color: #36536b;
+    border-color: #36536b;
   }
 
   textarea.form-input {
@@ -139,18 +151,45 @@
     background-color: #36536b;
     color: #fbfcfe;
   }
+
+  .error-message {
+    color: #ff000080;
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-bottom: -8px;
+
+    /* copied from figma */
+    font-family: Public Sans;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 12.93px;
+    letter-spacing: -0.08461538702249527px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .missing-field {
+    border-color: #ff000080 !important;
+  }
+
+  .missing-field::placeholder {
+    color: #ff000080 !important;
+  }
 }
 
 .sections-wrapper {
   display: flex;
   flex-direction: column;
   gap: 80px;
+  margin-bottom: 80px;
 }
 
 .innovators {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  max-width: none;
 
   .statement {
     color: #36536bc0;
@@ -170,6 +209,7 @@
 
   .partners-logos {
     margin-bottom: 0;
+    column-gap: 40px;
   }
 }
 
@@ -195,12 +235,22 @@
       margin-top: 80px;
       margin-bottom: 40px;
     }
+
+    .actual-form {
+      margin: 0;
+    }
   }
 
   .sections-wrapper {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 0;
+    gap: 32px;
+  }
+
+  .innovators {
+    .statement {
+      text-align: left;
+    }
   }
 }
